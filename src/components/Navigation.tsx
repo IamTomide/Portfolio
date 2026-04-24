@@ -75,7 +75,7 @@ const Navigation = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 z-40 bg-black/90 lg:hidden"
+              className="fixed inset-0 z-40 bg-[#1E314B] lg:hidden"
             />
         
             <motion.div
@@ -85,7 +85,7 @@ const Navigation = () => {
               transition={{ type: 'tween', duration: 0.3 }}
               className="fixed inset-0 z-50 lg:hidden pointer-events-none flex items-center justify-center"
             >
-              <div className="flex flex-col items-center justify-center h-1/2 w-xs gap-8 pointer-events-auto shadow-xl">
+              <div className="flex flex-col items-center justify-center h-1/2 w-xs gap-8 pointer-events-auto">
                 {navLinks.map((link, index) => (
                   <motion.a
                     key={link.name}
