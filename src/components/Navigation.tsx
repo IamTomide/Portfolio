@@ -51,7 +51,7 @@ const Navigation = () => {
                         key={link.name}
                         href={link.href}
                         onClick={(e) => handleSmoothScroll(e, link.href)}
-                        className="font-medium hover:text-[#7EC8C8] transition-colors duration-200 px-4 py-2"
+                        className="font-medium hover:text-primary transition-colors duration-200 px-4 py-2"
                         >
                             {link.name}
                         </a>
@@ -75,7 +75,7 @@ const Navigation = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+              className="fixed inset-0 z-40 bg-black/90 lg:hidden"
             />
         
             <motion.div
